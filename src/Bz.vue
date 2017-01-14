@@ -93,7 +93,13 @@
     methods: {
       setDate: function (val) {
         if (typeof val === 'number') { this.date.time = dateFormat(val, 'YYYY-MM-dd') }
-        if (typeof val === 'string') { this.date.time = val }
+        if (typeof val === 'string') {
+          if (this.option.type === 'day') { // 只要天
+            val = window.Date.parse(val)
+            val = dateFormat(val, 'YYYY-MM-dd')
+          }
+          this.date.time = val
+        }
       },
       change: function (date) {
         this.$emit('input', date)
