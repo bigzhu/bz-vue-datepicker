@@ -53,6 +53,7 @@
     },
     data: function () {
       return {
+        same_date: '',
         date: {
           time: ''
         },
@@ -101,10 +102,18 @@
           }
           this.date.time = val
         }
+        this.same_date = this.date.time
       },
       change: function (date) {
-        this.$emit('input', date)
-        this.$emit('change', date)
+        if (this.same_date === date) { // 如果选的是同一个, 那么清空, 实现不选中的功能
+          this.$emit('input', '')
+          this.$emit('change', '')
+          this.same_date = ''
+        } else {
+          this.$emit('input', date)
+          this.$emit('change', date)
+          this.same_date = date
+        }
       }
     }
   }
