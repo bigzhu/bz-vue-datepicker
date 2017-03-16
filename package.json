@@ -1,6 +1,6 @@
 {
   "name": "bz-vue-datepicker",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "bz-vue-datepicker",
   "main": "src/Bz.vue",
   "keywords": [
@@ -26,7 +26,6 @@
     "dev": "node build/dev-server.js",
     "test": ""
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {}
 }
