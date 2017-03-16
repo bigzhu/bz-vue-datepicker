@@ -3,7 +3,8 @@
 </template>
 
 <script>
-  import DatePicker from 'vue-datepicker'
+  // import DatePicker from 'vue-datepicker'
+  import DatePicker from './bz-vue-datepicker/vue-datepicker.vue'
   import dateFormat from 'bz-lib/functions/dateFormat'
   export default {
     props: {

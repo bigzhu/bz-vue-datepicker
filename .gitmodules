@@ -1,0 +1,3 @@
+[submodule "src/vue-datepicker"]
+	path = src/vue-datepicker
+	url = https://github.com/bigzhu/vue-datepicker

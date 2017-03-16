@@ -19,6 +19,7 @@
   "homepage": "https://github.com/bigzhu/bz-vue-datepicker#readme",
   "files": [
     "src/Bz.vue",
+    "src/vue-datepicker",
     "src/assets"
   ],
   "scripts": {
@@ -26,7 +27,6 @@
     "test": ""
   },
   "dependencies": {
-    "vue-datepicker": "^1.3.0"
   },
   "devDependencies": {}
 }
