@@ -11,6 +11,21 @@
       value: {
         requried: true
       },
+      inputStyle: {
+        type: Object,
+        default: function () {
+          return {
+            'display': 'inline-block',
+            'padding': '.9em 1em;',
+            'line-height': '22px',
+            'font-size': '14px',
+            'border': '1px solid #E1E6EB',
+            'box-shadow': 'inset 0px 1px 4px 0px rgba(0,0,0,0.10)',
+            'border-radius': '2px',
+            'color': 'rgba(0,0,0,.87)'
+          }
+        }
+      },
       option: {
         type: Object,
         default: function () {
@@ -19,16 +34,7 @@
             month: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
             format: 'YYYY-MM-DD',
             placeholder: '请选择日期',
-            inputStyle: {
-              'display': 'inline-block',
-              'padding': '.9em 1em;',
-              'line-height': '22px',
-              'font-size': '14px',
-              'border': '1px solid #E1E6EB',
-              'box-shadow': 'inset 0px 1px 4px 0px rgba(0,0,0,0.10)',
-              'border-radius': '2px',
-              'color': 'rgba(0,0,0,.87)'
-            },
+            inputStyle: this.inputStyle,
             color: {
               header: '#54C6A8',
               headerText: '#fff'
