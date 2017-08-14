@@ -1,6 +1,6 @@
 {
   "name": "bz-vue-datepicker",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "description": "bz-vue-datepicker",
   "main": "src/Bz.vue",
   "keywords": [
