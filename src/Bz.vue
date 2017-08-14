@@ -26,6 +26,10 @@
           }
         }
       },
+      placeholder: {
+        type: String,
+        default: '请选择日期'
+      },
       option: {
         type: Object,
         default: function () {
@@ -33,7 +37,7 @@
             type: 'day',
             month: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
             format: 'YYYY-MM-DD',
-            placeholder: '请选择日期',
+            placeholder: this.placeholder,
             inputStyle: this.inputStyle,
             color: {
               header: '#54C6A8',
